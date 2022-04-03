@@ -1,0 +1,8 @@
+query Drafts {
+  drafts {
+    id
+    content
+    published
+    title
+  }
+}
