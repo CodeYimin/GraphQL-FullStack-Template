@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "concurrently \"npm run react\" \"npm run codegen:watch\"",
-    "react": "react-scripts react",
+    "react": "react-scripts start",
     "build": "react-scripts build",
     "codegen": "graphql-codegen --config codegen.yml",
     "codegen:watch": "graphql-codegen --config codegen.yml --watch"
