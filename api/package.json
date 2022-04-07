@@ -5,8 +5,8 @@
   "author": "Yimin",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently \"nodemon --transpileOnly\" \"npm run docker\" \"npm run prisma:dev\" \"npx prisma studio\"",
-    "prisma:dev": "nodemon -e prisma -w prisma -x \"npx prisma db push --accept-data-loss\"",
+    "start": "concurrently \"nodemon --transpileOnly\" \"npm run docker\" \"npm run prisma:dev\"",
+    "prisma:dev": "nodemon -e prisma -w prisma -x \"npx prisma db push --accept-data-loss && npx prisma studio --browser none\"",
     "docker": "docker-compose -f docker-compose.yml -p dockerName up"
   },
   "dependencies": {
